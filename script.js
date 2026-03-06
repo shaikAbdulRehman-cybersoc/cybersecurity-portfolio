@@ -29,19 +29,3 @@ setTimeout(type,150)
 }
 
 type()
-
-particlesJS("particles-js",{
-
-particles:{
-
-number:{value:80},
-
-size:{value:3},
-
-color:{value:"#00f7ff"},
-
-line_linked:{enable:true,color:"#00f7ff"}
-
-}
-
-})
