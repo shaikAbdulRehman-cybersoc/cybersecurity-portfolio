@@ -152,7 +152,7 @@ Technical Tools & Platforms:
 ## 📬 Contact
 
 📧 Email
-[yourmail@gmail.com](mailto:cybershaik66@gmail.com)
+(mailto:cybershaik66@gmail.com)
 
 🔗 LinkedIn
 www.linkedin.com/in/shaik-abdul-rehman-b2175b354
