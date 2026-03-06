@@ -1,9 +1,12 @@
 # 🔐 Cybersecurity Portfolio – Shaik
+
 Welcome to my Cybersecurity Portfolio.
 This repository showcases my **skills, certifications, security investigations, and AI-driven SOC projects** developed during my learning journey in **Cybersecurity, AI Security, and SOC Operations**.
+
 My goal is to build expertise as a **SOC Analyst** and contribute to **modern cyber defense using AI and threat intelligence**.
 
 ---
+
 ## 👤 About Me
 
 I am a **BCA student passionate about Cybersecurity and AI-driven threat detection**.
@@ -102,4 +105,69 @@ This investigation highlights the importance of **OSINT in modern cyber threat a
 * Google Security Operations SOAR
 * Google Cloud Skills Boost Badges
 
-### Microsoft Se
+### Microsoft Security Training
+
+* Microsoft Sentinel
+* Microsoft Defender XDR
+* Microsoft Defender for Endpoint
+* Microsoft Purview Information Protection
+* Microsoft Threat Protection
+
+### LetsDefend SOC Training
+
+* Phishing Analysis Expert
+* Malware Traffic Analysis (Wireshark)
+* Web Attack Investigation
+* Cyber Incident Handler
+* VirusTotal SOC Analyst
+* SIEM 101
+* Brute Force Investigation
+
+---
+
+## 🛠 Skills
+
+Cybersecurity Domains:
+
+* Threat Detection
+* Incident Response
+* SIEM Investigation
+* SOC Operations
+* Phishing Analysis
+* Malware Traffic Analysis
+* OSINT Investigation
+* Threat Intelligence
+
+Technical Tools & Platforms:
+
+* Microsoft Defender XDR
+* Microsoft Sentinel
+* Wireshark
+* VirusTotal
+* Security Operations Platforms
+* Generative AI for Security Automation
+
+---
+
+## 📬 Contact
+
+📧 Email
+[yourmail@gmail.com](mailto:cybershaik66@gmail.com)
+
+🔗 LinkedIn
+www.linkedin.com/in/shaik-abdul-rehman-b2175b354
+
+📄 Resume
+Available in this repository.
+
+---
+
+## 🎯 Career Goal
+
+My objective is to become a **Security Operations Center (SOC) Analyst** and work with **global cybersecurity teams to detect, investigate, and respond to cyber threats**.
+
+I am particularly interested in **AI-driven security operations, threat intelligence, and advanced incident response**.
+
+---
+
+⭐ If you find this portfolio useful, feel free to **connect with me on LinkedIn or explore my work**.
