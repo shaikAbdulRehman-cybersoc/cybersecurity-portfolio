@@ -10,6 +10,8 @@ display:flex;
 justify-content:space-between;
 padding:20px 10%;
 background:#020c1b;
+position:sticky;
+top:0;
 }
 
 nav ul{
@@ -18,12 +20,28 @@ list-style:none;
 }
 
 nav ul li{
-margin-left:20px;
+margin-left:25px;
 }
 
 nav ul li a{
 color:white;
 text-decoration:none;
+position:relative;
+}
+
+nav ul li a::after{
+content:"";
+position:absolute;
+width:0%;
+height:2px;
+background:#00f7ff;
+left:0;
+bottom:-5px;
+transition:0.4s;
+}
+
+nav ul li a:hover::after{
+width:100%;
 }
 
 .logo span{
@@ -83,13 +101,47 @@ transition:0.3s;
 }
 
 .card:hover{
-transform:scale(1.05);
+transform:translateY(-10px);
+box-shadow:0 0 15px #00f7ff;
+}
+
+.cert-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.cert-card{
+background:#112240;
+padding:25px;
+border-radius:10px;
+transition:0.4s;
+cursor:pointer;
+}
+
+.cert-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00f7ff;
 }
 
 footer{
-text-align:center;
-padding:20px;
+background:black;
+padding:40px;
+font-family:monospace;
+color:#00ff9c;
+}
+
+.terminal{
 background:#020c1b;
+padding:20px;
+border-radius:8px;
+border:1px solid #00ff9c;
+}
+
+.copy{
+text-align:center;
+color:white;
+margin-top:20px;
 }
 
 @media(max-width:768px){
