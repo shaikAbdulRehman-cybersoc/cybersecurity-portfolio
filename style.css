@@ -1,8 +1,17 @@
 body{
 margin:0;
 font-family:Arial;
-background:#0a192f;
+background:black;
 color:white;
+}
+
+#matrix{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
 }
 
 nav{
@@ -10,8 +19,6 @@ display:flex;
 justify-content:space-between;
 padding:20px 10%;
 background:#020c1b;
-position:sticky;
-top:0;
 }
 
 nav ul{
@@ -34,10 +41,10 @@ content:"";
 position:absolute;
 width:0%;
 height:2px;
-background:#00f7ff;
-left:0;
+background:#00ff9c;
 bottom:-5px;
-transition:0.4s;
+left:0;
+transition:0.3s;
 }
 
 nav ul li a:hover::after{
@@ -45,7 +52,7 @@ width:100%;
 }
 
 .logo span{
-color:#00f7ff;
+color:#00ff9c;
 }
 
 .hero{
@@ -56,14 +63,14 @@ padding:80px 20px;
 .profile{
 width:150px;
 border-radius:50%;
-border:3px solid #00f7ff;
+border:3px solid #00ff9c;
 }
 
 .btn{
+background:#00ff9c;
 padding:10px 20px;
-background:#00f7ff;
-color:black;
 margin:10px;
+color:black;
 border-radius:5px;
 text-decoration:none;
 }
@@ -77,14 +84,14 @@ margin:20px 0;
 }
 
 .bar{
-background:#233554;
+background:#333;
 height:8px;
 }
 
 .bar span{
+background:#00ff9c;
 display:block;
 height:8px;
-background:#00f7ff;
 }
 
 .grid{
@@ -102,7 +109,7 @@ transition:0.3s;
 
 .card:hover{
 transform:translateY(-10px);
-box-shadow:0 0 15px #00f7ff;
+box-shadow:0 0 15px #00ff9c;
 }
 
 .cert-container{
@@ -115,13 +122,30 @@ gap:20px;
 background:#112240;
 padding:25px;
 border-radius:10px;
-transition:0.4s;
-cursor:pointer;
+transition:0.3s;
 }
 
 .cert-card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 20px #00f7ff;
+box-shadow:0 0 20px #00ff9c;
+}
+
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.alert{
+background:#1b1b1b;
+padding:20px;
+border-left:4px solid red;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{opacity:1}
+50%{opacity:0.5}
+100%{opacity:1}
 }
 
 footer{
@@ -134,20 +158,11 @@ color:#00ff9c;
 .terminal{
 background:#020c1b;
 padding:20px;
-border-radius:8px;
 border:1px solid #00ff9c;
+border-radius:8px;
 }
 
 .copy{
 text-align:center;
-color:white;
 margin-top:20px;
-}
-
-@media(max-width:768px){
-
-nav ul{
-flex-direction:column;
-}
-
 }
