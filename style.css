@@ -79,6 +79,34 @@ section{
 padding:80px 10%;
 }
 
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#112240;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 15px #00ff9c;
+}
+
+.cert-img{
+width:100%;
+height:220px;
+object-fit:contain;
+background:#0a192f;
+padding:10px;
+border-radius:8px;
+}
+
 .skill{
 margin:20px 0;
 }
@@ -92,41 +120,6 @@ height:8px;
 background:#00ff9c;
 display:block;
 height:8px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#112240;
-padding:20px;
-border-radius:10px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 15px #00ff9c;
-}
-
-.cert-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.cert-card{
-background:#112240;
-padding:25px;
-border-radius:10px;
-transition:0.3s;
-}
-
-.cert-card:hover{
-box-shadow:0 0 20px #00ff9c;
 }
 
 .dashboard{
@@ -165,4 +158,24 @@ border-radius:8px;
 .copy{
 text-align:center;
 margin-top:20px;
+}
+
+@media(max-width:768px){
+
+nav ul{
+flex-direction:column;
+}
+
+.cert-img{
+height:180px;
+}
+
+}
+
+@media(max-width:480px){
+
+.cert-img{
+height:150px;
+}
+
 }
