@@ -1,4 +1,4 @@
-# 🔐 Cybersecurity Portfolio – Shaik
+# 🔐 Cybersecurity Portfolio – Shaik Abdul Rehman
 
 Welcome to my Cybersecurity Portfolio.
 This repository showcases my **skills, certifications, security investigations, and AI-driven SOC projects** developed during my learning journey in **Cybersecurity, AI Security, and SOC Operations**.
