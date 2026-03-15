@@ -179,3 +179,68 @@ height:150px;
 }
 
 }
+
+/* Certificate Cards Cyber Glow */
+
+.card{
+
+background:#112240;
+padding:20px;
+border-radius:12px;
+transition:0.4s;
+text-align:center;
+position:relative;
+overflow:hidden;
+
+}
+
+/* Hover Glow */
+
+.card:hover{
+
+transform:translateY(-10px) scale(1.02);
+box-shadow:
+0 0 10px #00ff9c,
+0 0 20px #00ff9c,
+0 0 40px rgba(0,255,156,0.6);
+
+}
+
+/* Neon Border Animation */
+
+.card::before{
+
+content:"";
+position:absolute;
+top:-2px;
+left:-2px;
+right:-2px;
+bottom:-2px;
+border-radius:12px;
+background:linear-gradient(
+90deg,
+transparent,
+#00ff9c,
+transparent
+);
+
+opacity:0;
+transition:0.5s;
+
+}
+
+.card:hover::before{
+
+opacity:1;
+
+}
+
+section h2{
+
+font-size:32px;
+margin-bottom:40px;
+text-align:center;
+color:#ffffff;
+text-shadow:0 0 10px #00ff9c;
+
+}
