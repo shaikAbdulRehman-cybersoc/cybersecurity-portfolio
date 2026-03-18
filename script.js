@@ -95,3 +95,48 @@ setTimeout(terminal,800)
 }
 
 terminal()
+const ctxRadar = document.getElementById('radarChart');
+
+new Chart(ctxRadar, {
+type: 'radar',
+
+data: {
+labels: [
+'Threat Detection',
+'SIEM Analysis',
+'Incident Response',
+'OSINT',
+'AI Security',
+'Malware Analysis'
+],
+
+datasets: [{
+label: 'Skill Level',
+data: [85, 80, 75, 70, 80, 75],
+
+backgroundColor: 'rgba(0, 255, 156, 0.2)',
+borderColor: '#00ff9c',
+borderWidth: 2,
+pointBackgroundColor: '#00ff9c'
+}]
+},
+
+options: {
+scales: {
+r: {
+angleLines: { color: '#00ff9c' },
+grid: { color: '#1b1b1b' },
+pointLabels: { color: '#ffffff' },
+ticks: {
+color: '#00ff9c',
+backdropColor: 'transparent'
+}
+}
+},
+plugins: {
+legend: {
+labels: { color: '#ffffff' }
+}
+}
+}
+});
