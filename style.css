@@ -5,6 +5,15 @@ background:black;
 color:white;
 }
 
+#skills-graph{
+text-align:center;
+}
+#radarChart{
+max-width:500px;
+margin:auto;
+
+}
+
 #matrix{
 position:fixed;
 top:0;
