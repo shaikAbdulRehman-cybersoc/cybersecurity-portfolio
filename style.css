@@ -256,5 +256,20 @@ text-shadow:0 0 10px #00ff9c;
 .card p strong{
 color:#00ff9c;
 }
+.view-btn{
+margin-top:15px;
+padding:10px 20px;
+border:none;
+border-radius:8px;
+background:#00ff9c;
+color:#000;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
 
+.view-btn:hover{
+background:#00cc7a;
+transform:scale(1.05);
+}
 
