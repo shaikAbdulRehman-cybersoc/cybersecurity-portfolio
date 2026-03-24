@@ -141,6 +141,11 @@ labels: { color: '#ffffff' }
 }
 });
 
-function openPDF() {
+function openPDF(event) {
+  event.stopPropagation(); // VERY IMPORTANT
   window.open("reports/AI_Security_Case_Study_Report.pdf", "_blank");
+}
+
+card.onclick = function() {
+  // animation or glow
 }
