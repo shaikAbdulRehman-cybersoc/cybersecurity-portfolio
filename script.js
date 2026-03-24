@@ -140,3 +140,7 @@ labels: { color: '#ffffff' }
 }
 }
 });
+
+function openPDF() {
+  window.open("reports/AI_Security_Case_Study_Report.pdf", "_blank");
+}
