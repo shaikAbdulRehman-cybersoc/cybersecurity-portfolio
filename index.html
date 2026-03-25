@@ -148,17 +148,11 @@ Hands-on experience with Microsoft Defender XDR, SIEM investigations, malware tr
 <p><strong>Result:</strong> Successfully identified malicious infrastructure and attack patterns.</p>
 
 <p><strong>Tools:</strong> VirusTotal, Whois, Threat Intelligence</p>
-
-  <button class="view-btn">View Details</button>
-  <a href="reports/OSINT_Case_Study__Report.pdf" target="_blank">
-    <button class="view-btn" style="z-index:1000; position:relative;">
-    View Details
-  </button>
-</a>
-  
-</div>
-
-
+  <button class="view-btn" onclick="openModal('osintModal')">
+  View Details
+</button>
+  </div>
+   
 <section id="dashboard">
 
 <h2>Live SOC Threat Activity</h2>
@@ -292,6 +286,29 @@ alt="Advance Prompt Engineering UpGrad">
 </div>
 
 </section>
+  <div id="osintModal" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('osintModal')">&times;</span>
+
+    <h2>OSINT Threat Investigation</h2>
+
+    <!-- PDF -->
+    <p>
+      📄 <a href="reports/OSINT_Case_Study_Report.pdf" target="_blank">
+      View Full Report
+      </a>
+    </p>
+
+    <!-- IMAGES -->
+    <h3>Investigation Evidence</h3>
+
+    <img src="images/osint-virustotal.png">
+    <img src="images/osint-urlscan.png">
+    <img src="images/osint-whois.png">
+
+  </div>
+</div>
 
 
 
