@@ -351,6 +351,35 @@ h3 {
 }
 
 .explore-text:hover {
+  text-shadow: 0 0 8px #00ffcc;
   opacity: 1;
-  text-shadow: 0 0 5px #00ffcc;
 }
+
+.live-link {
+  display: block;
+  margin-top: 10px;
+  color: #00ffcc;
+  font-size: 13px;
+}
+
+.cta {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.contact-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+}
+
+.trust-line {
+  color: #00ffcc;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
