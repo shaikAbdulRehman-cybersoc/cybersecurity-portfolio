@@ -5,6 +5,13 @@ background:black;
 color:white;
 }
 
+.project-desc {
+  font-size: 14px;
+  color: #00ff9f;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
 #skills-graph{
 text-align:center;
 }
