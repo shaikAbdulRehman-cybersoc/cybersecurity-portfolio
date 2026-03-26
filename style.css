@@ -301,23 +301,19 @@ text-align:center;
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 0 25px #00ff9f, 0 0 50px rgba(0,255,159,0.3);
 }
-
 .view-btn {
   background: transparent;
-  border: 2px solid #00ff9f;
-  color: #00ff9f;
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .view-btn:hover {
-  background: #00ff9f;
-  color: black;
-  box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
 }
-
 h3 {
   text-shadow: 0 0 10px #00ff9f;
 }
@@ -398,6 +394,5 @@ h3 {
 .cta h2 {
   margin-bottom: 15px;
 }
-
 
 
