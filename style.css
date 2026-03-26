@@ -271,24 +271,20 @@ text-shadow:0 0 10px #00ff9c;
 .card p strong{
 color:#00ff9c;
 }
-.view-btn{
-margin-top:20px;
-padding:12px 28px;
-border:none;
-border-radius:10px;
-background:linear-gradient(45deg,#00ff9c,#00c3ff);
-color:#000;
-font-weight:bold;
-cursor:pointer;
-transition:0.3s;
-box-shadow:0 0 10px #00ff9c;
+.btn-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.view-btn:hover{
-transform:scale(1.08);
-box-shadow:0 0 20px #00ff9c, 0 0 40px #00ff9c;
+.btn-link:hover {
+  box-shadow: 0 0 10px #00ffcc;
 }
-
 .card{
 text-align:center;
 }
