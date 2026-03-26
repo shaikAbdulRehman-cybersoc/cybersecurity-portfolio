@@ -349,3 +349,8 @@ h3 {
   box-shadow: 0 0 15px #00ffcc;
   transform: translateY(-5px);
 }
+
+.explore-text:hover {
+  opacity: 1;
+  text-shadow: 0 0 5px #00ffcc;
+}
