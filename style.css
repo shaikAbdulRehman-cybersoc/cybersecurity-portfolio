@@ -435,7 +435,71 @@ h3 {
 .btn-link:hover::before {
   left: 100%;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+#nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* new code */
+
+/* 🔥 Mobile Fix */
+@media (max-width: 768px) {
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    background: #0a0f1c;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+.navbar {
+  background: rgba(10, 15, 28, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
 .btn-link {
   box-shadow: 0 0 10px rgba(0,255,204,0.3);
 }
