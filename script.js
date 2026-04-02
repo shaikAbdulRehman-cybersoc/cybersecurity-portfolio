@@ -147,3 +147,19 @@ document.querySelectorAll('.card').forEach(card => {
     // your glow effect
   });
 });
+
+
+
+// new code 
+
+function toggleMenu() {
+  document.getElementById("nav-links").classList.toggle("active");
+}
+
+window.addEventListener("scroll", () => {
+  document.querySelectorAll("section").forEach(sec => {
+    if (sec.getBoundingClientRect().top < window.innerHeight - 100) {
+      sec.classList.add("show");
+    }
+  });
+});
