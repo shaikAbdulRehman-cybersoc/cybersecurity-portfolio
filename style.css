@@ -501,35 +501,49 @@ h3 {
   cursor: pointer;
 }
 
-/* 🔥 MOBILE FIX */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: fixed; /* important */
-    top: 60px;
-    right: -100%; /* hide off screen */
-    width: 70%;
-    height: 100vh;
-    background: #0a0f1c;
-    padding: 20px;
-    transition: 0.3s ease;
-  }
-
-  html {
-  scroll-behavior: smooth;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-  section {
-  padding: 100px 20px;
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0f1c;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
 }
 
-  .nav-links a {
+.logo {
+  color: #00ffcc;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
   text-decoration: none;
+}
+
+/* SECTIONS */
+section {
+  height: 100vh; /* full screen */
+  padding: 60px 20px;
   color: white;
 }
 
-  .nav-links.active {
-    right: 0; /* slide in */
-  }
+/* OPTIONAL BACKGROUND FIX */
+#matrix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
