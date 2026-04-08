@@ -530,3 +530,27 @@ body {
     margin: 15px 0;
   }
 }
+
+/* New button code*/
+
+.view-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #00ffcc, #00ccaa);
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.view-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ccaa;
+}
+.view-btn {
+  border: 1px solid #00ffcc;
+}
