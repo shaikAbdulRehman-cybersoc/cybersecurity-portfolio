@@ -556,3 +556,12 @@ body {
   position: relative;
   z-index: 10;
 }
+
+/* New badge shadow */
+
+.badge-desc {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #00ffcc;
+  opacity: 0.85;
+}
