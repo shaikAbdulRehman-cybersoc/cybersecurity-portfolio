@@ -565,3 +565,10 @@ body {
   color: #00ffcc;
   opacity: 0.85;
 }
+
+{
+.tools-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+.tool-item { background: #0a1628; border: 1px solid #00aaff; 
+color: #00aaff; padding: 10px 16px; border-radius: 8px; 
+font-weight: bold; font-size: 14px; }
+}
