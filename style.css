@@ -571,4 +571,15 @@ body {
 .tool-item { background: #0a1628; border: 1px solid #00aaff; 
 color: #00aaff; padding: 10px 16px; border-radius: 8px; 
 font-weight: bold; font-size: 14px; }
+justify-content: center;
+text-align: center;
+}
+
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
 }
