@@ -583,3 +583,48 @@ text-align: center;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 12px;
 }
+
+
+/* Base (Mobile First) */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px;
+}
+
+.skills-grid, .projects-grid, .badges-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column on mobile */
+  gap: 16px;
+}
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+  .skills-grid, .badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Laptop/Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .skills-grid, .badges-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav ul {
+    flex-wrap: nowrap;
+  }
+}
