@@ -2,24 +2,26 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <title>S.AbdulRehman Cyber Portfolio</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
 <canvas id="matrix"></canvas>
-  
-  <header>
+
+<header>
   <div class="navbar">
     <div class="logo">ShaikCyber</div>
-    <ul class="nav-links">
+
+    <!-- ✅ FIXED: hamburger button added -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <!-- ✅ FIXED: id="nav-links" added so toggleMenu() works -->
+    <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -29,153 +31,109 @@
       <li><a href="#contact">Contact</a></li>
       <li><a href="#certifications">Certifications</a></li>
     </ul>
-  </div>   
-  <<section class="hero">
+  </div>
+</header>
 
-<img src="profile.jpg" class="profile">
-
-<h1>Shaik Abdul Rehman</h1>
+<section class="hero">
+  <img src="profile.jpg" class="profile" alt="Shaik Abdul Rehman">
+  <h1>Shaik Abdul Rehman</h1>
   <p class="trust-line">✔ Hands-on SOC Projects | ✔ Real Investigation Reports</p>
-<h3 class="typing"></h3>
-
-<p>Cybersecurity | SOC Analyst | AI Security</p>
-
-<div class="buttons">
-
-<a href="mailto:cybershaik66@gmail.com" class="btn">Email</a>
-
-<a href="www.linkedin.com/in/shaik-abdul-rehman-b2175b354" class="btn" target="_blank">LinkedIn</a>
-
-<a href="CV.docx" class="btn" target="_blank">Resume</a>
-
-</div>
-
+  <h3 class="typing"></h3>
+  <p>Cybersecurity | SOC Analyst | AI Security</p>
+  <div class="buttons">
+    <a href="mailto:cybershaik66@gmail.com" class="btn">Email</a>
+    <a href="https://www.linkedin.com/in/shaik-abdul-rehman-b2175b354" class="btn" target="_blank">LinkedIn</a>
+    <a href="CV.docx" class="btn" target="_blank">Resume</a>
+  </div>
 </section>
 
-  <section class="soc-dashboard">
+<section class="soc-dashboard">
   <h2>⚡ SOC Analyst Overview</h2>
-
   <div class="soc-cards">
-
     <div class="soc-card">
       <h3>🛡 Threat Detection</h3>
       <p>Identifying suspicious activity using logs & intelligence tools.</p>
     </div>
-
     <div class="soc-card">
       <h3>🔍 OSINT Analysis</h3>
       <p>Investigating domains, IPs, and threats using real-world tools.</p>
     </div>
-
     <div class="soc-card">
       <h3>📊 Incident Response</h3>
       <p>Analyzing alerts and generating SOC-style reports.</p>
     </div>
-
     <div class="soc-card">
       <h3>⚙ Automation</h3>
       <p>Building AI agents to automate SOC workflows.</p>
     </div>
-
   </div>
 </section>
-
-
 
 <section id="about">
-
-<h2>About Me</h2>
-<p>
-💥 From curiosity to capability — I don't just study cybersecurity, I practice it daily.
-</p>
-<p>
-🎓 BCA student targeting an L1 SOC Analyst role, passionate about AI-driven threat detection 
-and real-world SOC operations.
-</p>
-<p>
-🛡️ Hands-on with Microsoft Defender XDR, SIEM investigations, Malware Traffic Analysis, 
-OSINT Intelligence, Phishing Analysis, and Web Attack Investigation — validated through 
-LetsDefend SOC skill badges.
-</p>
-<p>
-🌍 Open to SOC Analyst internships and global opportunities in Saudi Arabia, UAE, and beyond.
-</p>
+  <h2>About Me</h2>
+  <p>💥 From curiosity to capability — I don't just study cybersecurity, I practice it daily.</p>
+  <p>🎓 BCA student targeting an L1 SOC Analyst role, passionate about AI-driven threat detection and real-world SOC operations.</p>
+  <p>🛡️ Hands-on with Microsoft Defender XDR, SIEM investigations, Malware Traffic Analysis, OSINT Intelligence, Phishing Analysis, and Web Attack Investigation — validated through LetsDefend SOC skill badges.</p>
+  <p>🌍 Open to SOC Analyst internships and global opportunities in Saudi Arabia, UAE, and beyond.</p>
 </section>
-
 
 <section id="skills">
-
-<h2>Core Skills</h2>
-
-<div class="skill">
-<p>Threat Detection</p>
-<div class="bar"><span style="width:85%"></span></div>
-</div>
-
-<div class="skill">
-<p>SIEM Investigation</p>
-<div class="bar"><span style="width:80%"></span></div>
-</div>
-
-<div class="skill">
-<p>Microsoft Defender XDR</p>
-<div class="bar"><span style="width:75%"></span></div>
-</div>
-
-<div class="skill">
-<p>OSINT Intelligence</p>
-<div class="bar"><span style="width:70%"></span></div>
-</div>
-
+  <h2>Core Skills</h2>
+  <div class="skill">
+    <p>Threat Detection</p>
+    <div class="bar"><span style="width:85%"></span></div>
+  </div>
+  <div class="skill">
+    <p>SIEM Investigation</p>
+    <div class="bar"><span style="width:80%"></span></div>
+  </div>
+  <div class="skill">
+    <p>Microsoft Defender XDR</p>
+    <div class="bar"><span style="width:75%"></span></div>
+  </div>
+  <div class="skill">
+    <p>OSINT Intelligence</p>
+    <div class="bar"><span style="width:70%"></span></div>
+  </div>
 </section>
 
-  
-  <section id="skills-graph">
-
-<h2>Cybersecurity Skill Intelligence</h2>
-
-<canvas id="radarChart"></canvas>
-
+<section id="skills-graph">
+  <h2>Cybersecurity Skill Intelligence</h2>
+  <canvas id="radarChart"></canvas>
 </section>
 
-<h2 class="section-title">🔍 Real-World Security Case Studies (Projects)</h2>  
+<!-- ✅ FIXED: project cards now inside a proper section -->
+<section id="projects">
+  <h2 class="section-title">🔍 Real-World Security Case Studies</h2>
+  <div class="grid">
 
-<div class="card">
-<h3>AI Security SOC Assistant – Agentic AI</h3>
-<p class="project-desc">
-Simulated automated SOC workflow using AI multi-agent architecture.
-</p>
-<p><strong>Problem:</strong> Manual SOC operations caused delays...</p>
-
-<p><strong>Result:</strong> Reduced manual workload and improved incident response speed.</p>
-
-<p><strong>Tools:</strong> Python, AI Agents, Log Analysis</p>
-  <a href="reports/AI_Security_Case_Study_Report.pdf" target="_blank">
-<button class="view-btn" style="z-index:1000; position:relative;">
-View Report
-</button>
-</a>
-<p class="explore-text">🤖 View full AI SOC automation workflow</p>
+    <div class="card">
+      <h3>AI Security SOC Assistant – Agentic AI</h3>
+      <p class="project-desc">Simulated automated SOC workflow using AI multi-agent architecture.</p>
+      <p><strong>Problem:</strong> Manual SOC operations caused delays...</p>
+      <p><strong>Result:</strong> Reduced manual workload and improved incident response speed.</p>
+      <p><strong>Tools:</strong> Python, AI Agents, Log Analysis</p>
+      <a href="reports/AI_Security_Case_Study_Report.pdf" target="_blank">
+        <button class="view-btn">View Report</button>
+      </a>
+      <p class="explore-text">🤖 View full AI SOC automation workflow</p>
     </div>
 
-<div class="card">
-<h3>OSINT Threat Investigation</h3>
+    <div class="card">
+      <h3>OSINT Threat Investigation</h3>
+      <p class="project-desc">Conducted real-world threat validation using OSINT tools and intelligence correlation.</p>
+      <p><strong>Problem:</strong> Identifying phishing infrastructure...</p>
+      <p><strong>Result:</strong> Successfully identified malicious infrastructure and attack patterns.</p>
+      <p><strong>Tools:</strong> VirusTotal, Urlscan.io, Whois, Threat Intelligence</p>
+      <a href="reports/OSINT_Case_Study__Report.pdf" target="_blank">
+        <button class="view-btn">View Report</button>
+      </a>
+      <p>🌐 Investigation Evidence Included in Report</p>
+    </div>
 
-<p class="project-desc">
-Conducted real-world threat validation using OSINT tools and intelligence correlation.
-</p>
-<p><strong>Problem:</strong> Identifying phishing infrastructure...</p>
-<p><strong>Result:</strong> Successfully identified malicious infrastructure and attack patterns.</p>
-<p><strong>Tools:</strong> VirusTotal, Urlscan.io, Whois, Threat Intelligence</p>
-  
-<a href="reports/OSINT_Case_Study__Report.pdf" target="_blank">
-<button class="view-btn" style="z-index:1000; position:relative;">
-View Report
-</button>  
-</a> 
-  <p>🌐 Investigation Evidence Included in Report  </p>
   </div>
-   
+</section>
+
 <section id="dashboard">
   <h2>🛠️ SOC Tools I Use</h2>
   <div class="tools-grid">
@@ -191,194 +149,145 @@ View Report
     <div class="tool-item">☁️ Cloud Security</div>
   </div>
 </section>
-    
+
 <section id="internships">
+  <h2>Cybersecurity Job Simulations</h2>
+  <div class="grid">
 
-<h2>Cybersecurity Job Simulations</h2>
+    <div class="card">
+      <img src="images/Jobstimulation/tata-iam.jpg" class="cert-img" alt="Tata IAM Simulation">
+      <h3>Tata IAM Simulation</h3>
+      <p class="project-desc">IAM Design & Access Control Analysis</p>
+      <a href="reports/TATA_IAM_Report.pdf" target="_blank" class="view-btn">View Report</a>
+    </div>
 
-<div class="grid">
+    <div class="card">
+      <img src="images/Jobstimulation/deloitte-log.jpg" class="cert-img" alt="Deloitte Log Analyst Simulation">
+      <h3>Deloitte Log Analyst Simulation</h3>
+      <p class="project-desc">Log Analysis & Threat Detection</p>
+      <a href="reports/Deloitte_Incident_Report.pdf" target="_blank" class="view-btn">View Report</a>
+    </div>
 
-<div class="card">
-<img src="images/Jobstimulation/tata-iam.jpg" class="cert-img" alt="Tata IAM Simulation">
-<h3>Tata IAM Simulation</h3>
-  <p class="project-desc">IAM Design & Access Control Analysis</p>
-<a href="reports/TATA_IAM_Report.pdf" target="_blank" class="view-btn">
-  View Report
-</a>
-</div>
+    <div class="card">
+      <img src="images/Jobstimulation/aig-shield.jpg" class="cert-img" alt="AIG Shield Cybersecurity Simulation">
+      <h3>AIG Shield Cybersecurity Simulation</h3>
+      <p class="project-desc">Vulnerability Response & Ransomware Recovery</p>
+      <a href="reports/AIG_Incident_Response_Report.pdf" target="_blank" class="view-btn">View Report</a>
+    </div>
 
-<div class="card">
-<img src="images/Jobstimulation/deloitte-log.jpg" class="cert-img" alt="Deloitte Log Analyst Simulation">
-<h3>Deloitte Log Analyst Simulation</h3>
-  <p class="project-desc">Log Analysis & Threat Detection</p>
-<a href="reports/Deloitte_Incident_Report.pdf" target="_blank" class="view-btn">
-  View Report
-</a>
-</div>
-
-<div class="card">
-<img src="images/Jobstimulation/aig-shield.jpg" class="cert-img" alt="AIG Shield Cybersecurity Simulation">
-<h3>AIG Shield Cybersecurity Simulation</h3>
-  <p class="project-desc">Vulnerability Response & Ransomware Recovery</p>
-<a href="reports/AIG_Incident_Response_Report.pdf" target="_blank" class="view-btn">
-  View Report
-</a>
-</div>
-
-</div>
+  </div>
+</section>
 
 <section id="certifications">
-
-<h2>Additional Certifications</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<img src="./images/Jobstimulation/gemini-cert.jpg"
-class="cert-img"
-onclick="openCert(this.src)"
-alt="Gemini University Student Certificate">
-
-<p>Gemini University Student Certificate</p>
-
-</div>
-
-<div class="card">
-
-<img src="./images/Jobstimulation/prompt-eng.jpg"
-class="cert-img"
-onclick="openCert(this.src)"
-alt="Advance Prompt Engineering UpGrad">
-
-<p>Advance Prompt Engineering – UpGrad</p>
-
-</div>
-
-</div>
-
+  <h2>Additional Certifications</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="./images/Jobstimulation/gemini-cert.jpg" class="cert-img" onclick="openCert(this.src)" alt="Gemini University Student Certificate">
+      <p>Gemini University Student Certificate</p>
+    </div>
+    <div class="card">
+      <img src="./images/Jobstimulation/prompt-eng.jpg" class="cert-img" onclick="openCert(this.src)" alt="Advance Prompt Engineering UpGrad">
+      <p>Advance Prompt Engineering – UpGrad</p>
+    </div>
+  </div>
 </section>
+
 <section id="letsdefend">
-
-<h2>LetsDefend SOC Skill Badges</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="images/Jobstimulation/phishing.png" class="cert-img">
-<p>Phishing Analysis</p>
-  <p class="badge-desc">Email threat detection & phishing analysis</p>
-</div>
-
-<div class="card">
-<img src="images/Jobstimulation/malware-traffic.png" class="cert-img">
-<p>Malware Traffic Analysis</p>
-  <p class="badge-desc">Network traffic analysis & packet inspection</p>
-  
-</div>
-
-<div class="card">
-<img src="images/Jobstimulation/web-attack.png" class="cert-img">
-<p>Web Attack Investigation</p>
-  <p class="badge-desc">Web attack detection & investigation (XSS, SQLi)</p>
-</div>
-
-<div class="card">
-<img src="images/Jobstimulation/incident-handler.png" class="cert-img">
-<p>Cyber Incident Handler</p>
-<p class="badge-desc">Incident response & threat handling workflow</p>
-</div>
-
-<div class="card">
-<img src="images/Jobstimulation/virustotal.png" class="cert-img">
-<p>VirusTotal Analyst</p>
-  <p class="badge-desc">Threat intelligence & file/URL analysis</p>
-</div>
-
-<div class="card">
-<img src="images/Jobstimulation/siem101.png" class="cert-img">
-<p>SIEM 101</p>
-  <p class="badge-desc">Log monitoring & SIEM alert analysis fundamentals</p>
-</div>
-
-  <div class="card">
-    <img src="images/Jobstimulation/jwtattack.png" class="cert-img">
-    <p>JWT Attacks and Detection</p>
-    <p class="badge-desc">JWT token exploitation & authentication attack detection</p>
-  </div> 
-
-<div class="card">
-<img src="images/Jobstimulation/bruteforce.png" class="cert-img">
-<p>Brute Force Investigation</p>
-  <p class="badge-desc">Brute-force attack detection & authentication analysis</p>
-</div>
-  
-  <div class='card'>
-    <img src="images/Jobstimulation/MalwareAnalyzer.png" class="cert-img">
-    <p>Malware Analyzer</p>
-    <p class="badge-desc">Malware behavior analysis & threat identification</p>
+  <h2>LetsDefend SOC Skill Badges</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="images/Jobstimulation/phishing.png" class="cert-img">
+      <p>Phishing Analysis</p>
+      <p class="badge-desc">Email threat detection & phishing analysis</p>
+    </div>
+    <div class="card">
+      <img src="images/Jobstimulation/malware-traffic.png" class="cert-img">
+      <p>Malware Traffic Analysis</p>
+      <p class="badge-desc">Network traffic analysis & packet inspection</p>
+    </div>
+    <div class="card">
+      <img src="images/Jobstimulation/web-attack.png" class="cert-img">
+      <p>Web Attack Investigation</p>
+      <p class="badge-desc">Web attack detection & investigation (XSS, SQLi)</p>
+    </div>
+    <div class="card">
+      <img src="images/Jobstimulation/incident-handler.png" class="cert-img">
+      <p>Cyber Incident Handler</p>
+      <p class="badge-desc">Incident response & threat handling workflow</p>
+    </div>
+    <div class="card">
+      <img src="images/Jobstimulation/virustotal.png" class="cert-img">
+      <p>VirusTotal Analyst</p>
+      <p class="badge-desc">Threat intelligence & file/URL analysis</p>
+    </div>
+    <div class="card">
+      <img src="images/Jobstimulation/siem101.png" class="cert-img">
+      <p>SIEM 101</p>
+      <p class="badge-desc">Log monitoring & SIEM alert analysis fundamentals</p>
+    </div>
+    <div class="card">
+      <img src="images/Jobstimulation/jwtattack.png" class="cert-img">
+      <p>JWT Attacks and Detection</p>
+      <p class="badge-desc">JWT token exploitation & authentication attack detection</p>
+    </div>
+    <div class="card">
+      <img src="images/Jobstimulation/bruteforce.png" class="cert-img">
+      <p>Brute Force Investigation</p>
+      <p class="badge-desc">Brute-force attack detection & authentication analysis</p>
+    </div>
+    <div class="card">
+      <img src="images/Jobstimulation/MalwareAnalyzer.png" class="cert-img">
+      <p>Malware Analyzer</p>
+      <p class="badge-desc">Malware behavior analysis & threat identification</p>
+    </div>
+    <div class="card">
+      <img src="images/Jobstimulation/networkcable.png" class="cert-img">
+      <p>Network Cable</p>
+      <p class="badge-desc">Networking fundamentals & connectivity concepts</p>
+    </div>
   </div>
-  
-  <div class="card">
-    <img src="images/Jobstimulation/networkcable.png" class="cert-img">
-    <p>Network Cable</p>
-    <p class="badge-desc">Networking fundamentals & connectivity concepts</p>
-  </div>
-  
-</div>
-
 </section>
-
-
 
 <section id="ai">
-
-<h2>AI Security Certifications</h2>
-
-<div class="grid">
-
-<div class="card">IBM Cybersecurity + Generative AI</div>
-<div class="card">Understanding Agentic AI</div>
-<div class="card">Google Generative AI</div>
-<div class="card">Google Vertex AI</div>
-<div class="card">Microsoft AI Security Fundamentals</div>
-<div class="card">Microsoft AI Security Controls</div>
-<div class="card">Kaggle × Google AI Agent Intensive</div>
-
-</div>
-
+  <h2>AI Security Certifications</h2>
+  <div class="grid">
+    <div class="card">IBM Cybersecurity + Generative AI</div>
+    <div class="card">Understanding Agentic AI</div>
+    <div class="card">Google Generative AI</div>
+    <div class="card">Google Vertex AI</div>
+    <div class="card">Microsoft AI Security Fundamentals</div>
+    <div class="card">Microsoft AI Security Controls</div>
+    <div class="card">Kaggle × Google AI Agent Intensive</div>
+  </div>
 </section>
-  
+
 <section class="cta">
   <h2>🚀 Ready to Contribute as a SOC Analyst</h2>
   <p>Actively seeking SOC Analyst opportunities to contribute to real-world security operations</p>
 </section>
 
 <section id="contact">
-<div class="contact-box">
-  <p>📧 Email: cybershaik66@gmail.com</p>
-  <p>🔗 LinkedIn: linkedin.com/in/shaik-abdul-rehman</p>
-  <p>📍 Location: India (Open to Remote / Relocation)</p>
-  <p>🟢 Open to SOC Analyst / Cybersecurity Opportunities</p>
-</div>
+  <div class="contact-box">
+    <p>📧 Email: cybershaik66@gmail.com</p>
+    <p>🔗 LinkedIn: linkedin.com/in/shaik-abdul-rehman</p>
+    <p>📍 Location: India (Open to Remote / Relocation – Saudi Arabia / UAE)</p>
+    <p>🟢 Open to SOC Analyst / Cybersecurity Opportunities</p>
+  </div>
 </section>
 
 <footer>
-
-<div class="terminal"></div>
-
-<p class="copy">© 2026 Shaik Cyber Portfolio</p>
-
+  <div class="terminal"></div>
+  <p class="copy">© 2026 Shaik Cyber Portfolio</p>
 </footer>
-
 
 <script src="script.js"></script>
 
-</body>
-  <script>
+<!-- ✅ FIXED: toggleMenu now targets correct id -->
+<script>
 function toggleMenu() {
   document.getElementById("nav-links").classList.toggle("active");
 }
 </script>
 
+</body>
 </html>
