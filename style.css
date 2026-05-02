@@ -562,3 +562,13 @@ h3 {
     padding: 8px 12px;
   }
 }
+
+/* new code for the logo */
+.logo img {
+  transition: 0.3s;
+}
+
+.logo img:hover {
+  filter: drop-shadow(0 0 8px #00ff9c);
+  transform: scale(1.1);
+}
