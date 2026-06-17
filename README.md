@@ -9,7 +9,7 @@ My goal is to build expertise as a **SOC Analyst** and contribute to **modern cy
 
 ## 👤 About Me
 
-I am a **BCA student passionate about Cybersecurity and AI-driven threat detection**.
+I am a **BCA Honour graduate about Cybersecurity and AI-driven threat detection**.
 I actively practice **SOC investigations, SIEM analysis, phishing analysis, malware traffic analysis, and OSINT investigations**.
 
 I am currently building hands-on experience with:
