@@ -20,9 +20,7 @@
       <img src="images/Jobstimulation/logo.png"
            style="width:38px; height:38px; vertical-align:middle; margin-right:8px; border-radius:6px;">ShaikCyber
     </div>
-
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
-
     <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -43,7 +41,7 @@
   <h3 class="typing"></h3>
   <p>Cybersecurity | SOC Analyst | AI Security</p>
   <div class="buttons">
-    <a href="cybershaik66@gmail.com" class="btn">Email</a>
+    <a href="mailto:cybershaik66@gmail.com" class="btn">Email</a>
     <a href="https://www.linkedin.com/in/shaik-abdul-rehman-soc" class="btn" target="_blank">LinkedIn</a>
     <a href="myresume.pdf" class="btn" target="_blank">Resume</a>
   </div>
@@ -77,7 +75,7 @@
   <p>🎓 BCA Honours Graduate targeting an L1 SOC Analyst role, passionate about AI-driven threat detection and real-world SOC operations.</p>
   <p>🛡️ Hands-on with Microsoft Defender XDR, SIEM investigations, Malware Traffic Analysis, OSINT Intelligence, Phishing Analysis, and Web Attack Investigation — validated through LetsDefend SOC skill badges.</p>
   <p>📋 Familiar with Saudi regulatory frameworks including SAMA CSF and NCA ECC — understanding how compliance requirements translate into real SOC operational controls.</p>
-  <p>🌍 Open to SOC Analyst internships and global opportunities in Saudi Arabia, UAE, and beyond.</p>
+  <p>🌍 Open to SOC Analyst roles and global opportunities in Saudi Arabia, UAE, and beyond.</p>
 </section>
 
 <section id="skills">
@@ -132,6 +130,15 @@
         <li>⚡ If high severity → Auto-Escalate to L2 + create incident ticket</li>
         <li>✅ If false positive → Auto-Close with documented reasoning</li>
         <li>📊 MTTR tracked and logged per incident automatically</li>
+      </ul>
+
+      <p><strong>AI Risk & Governance Controls:</strong></p>
+      <ul style="text-align:left; color:#00ff9f; font-size:14px;">
+        <li>⚠️ Prompt Injection Defense: Input sanitization applied to all log data before AI processing — preventing attackers from embedding malicious instructions in log entries to manipulate agent behavior</li>
+        <li>🔐 Least Agency Principle: AI agents operate with minimum required permissions only — no standing access to firewall or production systems</li>
+        <li>⏱️ Just-In-Time (JIT) Access: Elevated permissions granted only for the duration of a specific task, then automatically revoked</li>
+        <li>👤 Human-in-the-Loop (HITL): All critical remediation actions require mandatory human approval before execution</li>
+        <li>👁️ Agent Monitoring: AI agent behavior is continuously monitored — session automatically frozen if unauthorized actions are attempted</li>
       </ul>
 
       <p><strong>MTTR Impact:</strong> Automated triage reduced mean time to respond by ~60%, cutting manual investigation from ~45 minutes to under 18 minutes per alert — directly limiting attacker dwell time.</p>
@@ -222,19 +229,15 @@
       <img src="images/Jobstimulation/aig-shield.jpg" class="cert-img" alt="AIG Shield Cybersecurity Simulation">
       <h3>AIG Shield Cybersecurity Simulation</h3>
       <p class="project-desc">Vulnerability Response & Ransomware Recovery</p>
-      <a href="reports/AIG_Incident_Response_Report.pdf" target="_blank" class="view-btn">View Report</a>
+      <a href="reports/AIG_Incident_Report.pdf" target="_blank" class="view-btn">View Report</a>
     </div>
 
     <div class="card">
-  <img src="images/Jobstimulation/pwc-risk.png" class="cert-img" alt="PwC Cyber Security Consulting Simulation"> 
-  <h3>PwC Cyber Security Consulting Simulation</h3>  
-  <p class="project-desc">
-    Risk Assessment, SDLC Security & ITGC Controls Testing
-  </p>
-  <a href="reports/PwC_ITGC_Controls_Testing_Report.pdf" target="_blank" class="view-btn">
-    View Report
-  </a>
-</div>
+      <img src="images/Jobstimulation/pwc-risk.png" class="cert-img" alt="PwC Cyber Security Consulting Simulation">
+      <h3>PwC Cyber Security Consulting Simulation</h3>
+      <p class="project-desc">Risk Assessment, SDLC Security & ITGC Controls Testing</p>
+      <a href="reports/PwC_ITGC_Controls_Testing_Report.pdf" target="_blank" class="view-btn">View Report</a>
+    </div>
 
   </div>
 </section>
@@ -242,14 +245,31 @@
 <section id="certifications">
   <h2>Additional Certifications</h2>
   <div class="grid">
+
+    <!-- CompTIA Security+ -->
+    <div class="card">
+      <img src="images/Jobstimulation/security-plus.png" class="cert-img" alt="CompTIA Security+ SY0-701">
+      <p><strong>CompTIA Security+ SY0-701</strong></p>
+      <p class="badge-desc">Score: 829 | Certified June 2026</p>
+    </div>
+
+    <!-- COFPS -->
+    <div class="card">
+      <img src="images/Jobstimulation/cofps.png" class="cert-img" alt="Certified Online Fraud Prevention Specialist">
+      <p><strong>Certified Online Fraud Prevention Specialist</strong></p>
+      <p class="badge-desc">COFPS | Hack & Fix Academy | June 2026</p>
+    </div>
+
     <div class="card">
       <img src="./images/Jobstimulation/gemini-cert.jpg" class="cert-img" onclick="openCert(this.src)" alt="Gemini University Student Certificate">
       <p>Gemini University Student Certificate</p>
     </div>
+
     <div class="card">
       <img src="./images/Jobstimulation/prompt-eng.jpg" class="cert-img" onclick="openCert(this.src)" alt="Advance Prompt Engineering UpGrad">
       <p>Advance Prompt Engineering – UpGrad</p>
     </div>
+
   </div>
 </section>
 
@@ -342,9 +362,22 @@
     </div>
 
     <div class="card">
-      <img src="images/Jobstimulation/incident-handler.png" class="cert-img">
+      <img src="images/Jobstimulation/incident-handler. png" class="cert-img">
       <p>Cyber Incident Handler</p>
       <p class="badge-desc">Incident response & threat handling workflow</p>
+    </div>
+
+    <!-- NEW BADGES -->
+    <div class="card">
+      <img src="images/Jobstimulation/incident-handler2.png" class="cert-img">
+      <p>Incident Handler 2</p>
+      <p class="badge-desc">Advanced incident handling & escalation procedures</p>
+    </div>
+
+    <div class="card">
+      <img src="images/Jobstimulation/hunter.png" class="cert-img">
+      <p>Hunter</p>
+      <p class="badge-desc">Threat hunting skills & proactive alert investigation</p>
     </div>
 
   </div>
@@ -371,7 +404,7 @@
 <section id="contact">
   <div class="contact-box">
     <p>📧 Email: cybershaik66@gmail.com</p>
-    <p>🔗 LinkedIn: linkedin.com/in/shaik-abdul-rehman</p>
+    <p>🔗 LinkedIn: linkedin.com/in/shaik-abdul-rehman-soc</p>
     <p>📍 Location: India (Open to Remote / Relocation – Saudi Arabia / UAE)</p>
     <p>🟢 Open to SOC Analyst / Cybersecurity Opportunities</p>
   </div>
